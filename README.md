@@ -1,8 +1,29 @@
 # avtidy v0.9.19
 
-avtidy 是一個用來整理本機 AV 影片目錄的工具，提供 CLI 與 GUI 兩種使用方式。
+**中文**
 
-它會掃描你指定的根目錄，從資料夾名稱或單獨大檔案解析番號，盡量從多個網站抓取片名、女優、片商、發行日期與封面，然後自動整理檔案、建立 Markdown 索引，讓整個收藏更好找、更好維護。
+avtidy 是一個專門整理本機 AV 收藏的工具。
+它會掃描你指定的影片根目錄，從資料夾名稱或單獨大檔案解析番號，盡量從多個網站抓取片名、女優、片商、發行日期與封面，並自動整理資料夾、影音檔與 Markdown 索引，讓整個收藏更好找、更好維護。
+
+**English**
+
+avtidy is a local AV library organizer with both CLI and GUI.
+It scans your library root, looks up metadata by code, renames folders and large video files, downloads covers when available, and generates Markdown indexes for easier browsing and maintenance.
+
+## Features / 功能特色
+
+- Fetch title, actresses, studio, release date, and cover by code
+- 依番號抓取片名、女優、片商、發行日期與封面
+- Rename folders to `YYMMDD-CODE` format
+- 自動將資料夾改名為 `YYMMDD-番號`
+- Rename large video files into clean standardized names
+- 自動把大型影音檔改成標準化檔名
+- Preserve subtitles and cover images during cleanup
+- 清理時保留字幕與封面圖片
+- Generate Markdown indexes such as `catalog.md`, `actresses.md`, and `missing-metadata.md`
+- 自動產生作品總表、女優索引與缺資料清單
+- Provide both CLI and GUI workflows
+- 同時提供 CLI 與 GUI 使用方式
 
 ## 功能總覽
 
