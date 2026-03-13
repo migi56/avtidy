@@ -1,4 +1,4 @@
-__version__ = "0.9.17"
+__version__ = "0.9.19"
 
 from .core import (
     ACTRESSES_CATALOG_FILE_NAME,

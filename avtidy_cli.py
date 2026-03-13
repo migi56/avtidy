@@ -3,8 +3,8 @@ from __future__ import annotations
 import argparse
 from pathlib import Path
 
-from avgo import __version__
-from avgo.core import (
+from avtidy import __version__
+from avtidy.core import (
     MODE_NEW_ONLY,
     MODE_REBUILD_CATALOG,
     MODE_RESCAN_ALL,
@@ -22,7 +22,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--rebuild-catalog", action="store_true", help="Only rebuild catalog.md without touching info.md files.")
     parser.add_argument("--download-cover", action="store_true", help="Download cover images when extra.cover_url is available.")
     parser.add_argument("--preview-delete", action="store_true", help="Preview unrelated files that would be deleted, but do not delete them.")
-    parser.add_argument("--version", action="version", version=f"AVGO {__version__}")
+    parser.add_argument("--version", action="version", version=f"avtidy {__version__}")
     return parser.parse_args()
 
 

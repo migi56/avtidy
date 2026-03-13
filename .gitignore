@@ -10,6 +10,7 @@ env/
 ENV/
 
 # Project runtime state
+.avtidy_gui_state.json
 .avgo_gui_state.json
 
 # Tool caches

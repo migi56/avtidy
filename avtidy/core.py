@@ -15,7 +15,7 @@ INFO_FILE_NAME = "info.md"
 CATALOG_FILE_NAME = "catalog.md"
 ACTRESSES_CATALOG_FILE_NAME = "actresses.md"
 MISSING_METADATA_FILE_NAME = "missing-metadata.md"
-GUI_STATE_FILE = ".avgo_gui_state.json"
+GUI_STATE_FILE = ".avtidy_gui_state.json"
 DEFAULT_BODY = "# Notes\n\n"
 VIDEO_RENAME_MIN_SIZE = 1024 * 1024 * 1024
 VIDEO_EXTENSIONS = {
@@ -103,7 +103,7 @@ def count_files(folder: Path) -> int:
 
 
 def should_scan_folder(folder: Path) -> bool:
-    return folder.is_dir() and not folder.name.startswith(".") and folder.name != "avgo" and folder.name != "vendor"
+    return folder.is_dir() and not folder.name.startswith(".") and folder.name != "avtidy" and folder.name != "vendor"
 
 
 def is_large_video_file(path: Path) -> bool:

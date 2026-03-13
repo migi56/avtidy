@@ -1,6 +1,6 @@
-# AVGO v0.9.16
+# avtidy v0.9.19
 
-AVGO 是一個用來整理本機 AV 影片目錄的工具，提供 CLI 與 GUI 兩種使用方式。
+avtidy 是一個用來整理本機 AV 影片目錄的工具，提供 CLI 與 GUI 兩種使用方式。
 
 它會掃描你指定的根目錄，從資料夾名稱或單獨大檔案解析番號，盡量從多個網站抓取片名、女優、片商、發行日期與封面，然後自動整理檔案、建立 Markdown 索引，讓整個收藏更好找、更好維護。
 
@@ -189,49 +189,49 @@ pip install requests
 查看版本：
 
 ```powershell
-python .\avgo_cli.py --version
+python .\avtidy_cli.py --version
 ```
 
 預設只處理新資料夾：
 
 ```powershell
-python .\avgo_cli.py "D:\AV"
+python .\avtidy_cli.py "D:\AV"
 ```
 
 全部重跑：
 
 ```powershell
-python .\avgo_cli.py "D:\AV" --rescan-all
+python .\avtidy_cli.py "D:\AV" --rescan-all
 ```
 
 只補缺欄位：
 
 ```powershell
-python .\avgo_cli.py "D:\AV" --rescan-missing
+python .\avtidy_cli.py "D:\AV" --rescan-missing
 ```
 
 只重建索引：
 
 ```powershell
-python .\avgo_cli.py "D:\AV" --rebuild-catalog
+python .\avtidy_cli.py "D:\AV" --rebuild-catalog
 ```
 
 下載封面：
 
 ```powershell
-python .\avgo_cli.py "D:\AV" --rescan-all --download-cover
+python .\avtidy_cli.py "D:\AV" --rescan-all --download-cover
 ```
 
 先預覽待刪檔案：
 
 ```powershell
-python .\avgo_cli.py "D:\AV" --preview-delete
+python .\avtidy_cli.py "D:\AV" --preview-delete
 ```
 
 ### 啟動 GUI
 
 ```powershell
-python .\avgo_gui.py
+python .\avtidy_gui.py
 ```
 
 GUI 中可以：
@@ -246,7 +246,7 @@ GUI 中可以：
 ## CLI 參數說明
 
 ```text
-python .\avgo_cli.py <root_path> [options]
+python .\avtidy_cli.py <root_path> [options]
 ```
 
 常用參數：
@@ -381,22 +381,22 @@ GUI 下方輸出框會即時顯示每個目錄的處理結果，例如：
 ## 專案結構
 
 ```text
-avgo/
-  avgo/
+avtidy/
+  avtidy/
     __init__.py
     core.py
     fetcher.py
-  avgo_cli.py
-  avgo_gui.py
+  avtidy_cli.py
+  avtidy_gui.py
   README.md
 ```
 
 主要檔案用途：
 
-- `avgo/core.py`：掃描、改名、輸出索引、檔案整理
-- `avgo/fetcher.py`：多來源查詢與資料整合
-- `avgo_cli.py`：CLI 入口
-- `avgo_gui.py`：GUI 入口
+- `avtidy/core.py`：掃描、改名、輸出索引、檔案整理
+- `avtidy/fetcher.py`：多來源查詢與資料整合
+- `avtidy_cli.py`：CLI 入口
+- `avtidy_gui.py`：GUI 入口
 
 ## 注意事項
 

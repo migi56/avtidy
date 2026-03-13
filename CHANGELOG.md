@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.9.19] - 2026-03-13
+
+### Changed
+- Renamed the project, package, CLI/GUI entry points, GUI window title, and state file from `av_tidy` to `avtidy`.
+- Updated documentation and commands to use `avtidy`.
+
+## [0.9.18] - 2026-03-13
+
+### Changed
+- Renamed the project, package, GUI title, state file, and CLI/GUI entry points from `avgo` to `avtidy`.
+
 ## [0.9.17] - 2026-03-13
 
 ### Changed

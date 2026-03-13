@@ -6,8 +6,8 @@ import tkinter as tk
 from pathlib import Path
 from tkinter import filedialog, messagebox, ttk
 
-from avgo import __version__
-from avgo.core import (
+from avtidy import __version__
+from avtidy.core import (
     MODE_LABELS,
     MODE_NEW_ONLY,
     MODE_REBUILD_CATALOG,
@@ -104,10 +104,10 @@ class DeletePreviewDialog(tk.Toplevel):
         self.destroy()
 
 
-class AvgoApp:
+class AvTidyApp:
     def __init__(self, root: tk.Tk) -> None:
         self.root = root
-        self.root.title(f"AVGO Catalog Tool v{__version__}")
+        self.root.title(f"avtidy v{__version__}")
         self.root.geometry("820x640")
 
         self.state = load_gui_state(APP_ROOT)
@@ -314,7 +314,7 @@ def main() -> int:
     style = ttk.Style(root)
     if "vista" in style.theme_names():
         style.theme_use("vista")
-    app = AvgoApp(root)
+    app = AvTidyApp(root)
     app.append_output("選擇影片根目錄、模式與附加選項後即可開始。")
     root.mainloop()
     return 0
