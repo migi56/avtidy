@@ -1,0 +1,29 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Project runtime state
+.avgo_gui_state.json
+
+# Tool caches
+.playwright-cli/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# OS files
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Local generated outputs (uncomment if you do not want to track them)
+# catalog.md
+# actresses.md
+# missing-metadata.md
